@@ -10,6 +10,19 @@
 </head>
 <body>
     <h1><%= title %></h1>
-    Hello EJS!
+    <form >
+        <label for="LoremColor">Színválasztás</label>
+        <input type="color" name="LoremColor" value="<%= szin %>"><br>
+        <label for="numbers">Számok</label>
+        <input type="number" name="num1" style="margin: 2px,2px,2px,2px;">
+        <input type="number" name="num2" style="margin: 2px,2px,2px,2px;">
+        <input type="number" name="num3" style="margin: 2px,2px,2px,2px;"><br>
+
+        <button type="submit">Tegyél Tönkre</button>
+    </form>
+    <p style="color: <%=szin %>">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p><br>
+    <p>Első szám: <%= szamolas1 %> | Második szám: <%= szamolas2 %></p>
+    <a href="intro" style="margin: 2px,2px,2px,2px;">intro</a>
+    <a href="afa" style="margin: 2px,2px,2px,2px;">Áfa</a>
 </body>
 </html>
